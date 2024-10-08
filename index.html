@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Рестораны Минска</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+
+
+  <video class="background-video" autoplay muted loop>
+    <source src="rest_video.mp4" type="video/mp4">
+    Ваш браузер не поддерживает тег video.
+  </video>
+
+
+
+
+<header>
+  <nav id="top-menu">
+    <a href="ONAS.html">
+      <button id="loginButton">О нас</button>
+    </a>
+     
+  </nav>
+
+
+
+  <h1 id="siteTitle">Рестораны Минска</h1>
+
+
+  <div class="filters">
+    <select id="cuisineType" onchange="filterRestaurants()">
+      <option value="">Все рестораны</option>
+      <option value="итальянская">Итальянская кухня</option>
+      <option value="русская">Русская кухня</option>
+      <option value="американская">Американская кухня</option>
+      <option value="французская">Французская кухня</option>
+      <option value="белорусская">Белорусская кухня</option>
+      <option value="европейская">Европейская кухня</option>
+      <option value="пивоварня">Пивоварня кухня</option>
+      <option value="мексиканская">Мексиканская кухня</option>
+      <option value="морепродукты">Морепродукты</option>
+
+
+
+      <!-- Добавьте другие опции -->
+    </select>
+  
+    <!-- Добавьте другие фильтры по желанию -->
+  </div>
+
+
+  <div id="search-area">
+    <input type="text" id="searchBox" placeholder="Поиск..." oninput="searchRestaurants()">
+  </div>
+</header>
+
+
+<div class="map-section">
+  <div class="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4a1bea2174d2450976c92bc2ea94ab286500328679b7f517be5948d8422f24af&amp;width=378&amp;height=687&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</div>
+
+
+<div class="wrapper">
+
+
+  <div class="content">
+    <!-- Блоки с картинкой и описанием -->
+    
+    
+
+    <div class="block" data-cuisine="итальянская">
+      <a href="rest_neft.html">
+        <img src="image/rest_neft.jpeg" width="130" height="140">
+        <p>Ресторан Нефть</p>
+      </a>
+    </div>
+    
+    <!--Второй ресторан-->
+    <div class="block" data-cuisine="американская">
+      <a href="rest_enzo.html">
+        <img src="image/rest.enzo.jpg" width="130" height="140">
+        <p>Ресторан Enzo</p>
+      </a>
+    </div>
+    
+
+
+    <!--Третий ресторан-->
+    <div class="block" data-cuisine="американская">
+      <a href="rest_middleGround.html">
+        <img src="image/rest.middle_ground.jpg" width="130" height="140">
+        <p>Ресторан Middle Ground</p>
+      </a>
+    </div>
+
+    <!--4 ресторан-->
+    <div class="block" data-cuisine="белорусская">
+      <a href="rest_chumShlah.html">
+        <img src="image/rest.shlyah.jpg" width="130" height="140">
+        <p>Ресторан Чумацький Шлях</p>
+      </a>
+    </div>
+
+
+    <!--5 ресторан-->
+    <div class="block" data-cuisine="европейская">
+      <a href="rest_kofevarium.html">
+        <img src="image/rest.kofevarium.jpg" width="130" height="140">
+        <p>Ресторан Кофевариум</p>
+      </a>
+    </div>
+
+
+    <!--6 ресторан-->
+    <div class="block" data-cuisine="итальянская">
+      <a href="rest_ScalaIgnazio.html">
+        <img src="image/rest.laScala.jpeg" width="130" height="140">
+        <p>Ресторан La Scala Trattoria Ignazio</p>
+      </a>
+    </div>
+
+
+    <!--7 ресторан-->
+    <div class="block" data-cuisine="европейская">
+      <a href="rest_dom.html">
+        <img src="image/rest.dom.jpg" width="130" height="140">
+        <p>Ресторан Дом</p>
+      </a>
+    </div>
+
+
+    <!--8 ресторан-->
+    <div class="block" data-cuisine="морепродукты">
+      <a href="rest_SFB.html">
+        <img src="image/rest.SFB.jpg" width="130" height="140">
+        <p>Ресторан SFB Minsk</p>
+      </a>
+    </div>
+
+    
+    <!--9 ресторан-->
+    <div class="block" data-cuisine="пивоварня">
+      <a href="rest_rakBrovar.html">
+        <img src="image/rest.rakBrovar.jpg" width="130" height="140">
+        <p>Ресторан Раковский Бровар</p>
+      </a>
+    </div>
+
+
+    <!--10 ресторан-->
+    <div class="block" data-cuisine="европейская">
+      <a href="rest_Grand.html">
+        <img src="image/rest.grand.jpg" width="130" height="140">
+        <p>Ресторан Grand Cafe</p>
+      </a>
+    </div>
+
+    <!--11 ресторан-->
+    <div class="block" data-cuisine="французская">
+      <a href="rest_Grebeshok.html">
+        <img src="image/rest.zolGrebesh.jpg" width="130" height="140">
+        <p>Ресторан Золотой гребешок</p>
+      </a>
+    </div>
+
+
+
+    <!--12 ресторан-->
+    <div class="block" data-cuisine="русская">
+      <a href="rest_Traktir.html">
+        <img src="image/rest.traktir.jpg" width="130" height="140">
+        <p>Ресторан Трактиръ на Парковой</p>
+      </a>
+    </div>
+
+
+    <!--13 ресторан-->
+    <div class="block" data-cuisine="немецкая">
+      <a href="rest_Gambrinus.html">
+        <img src="image/rest.gambrinus.jpg" width="130" height="140">
+        <p>Ресторан Gambrinus</p>
+      </a>
+    </div>
+
+
+    <!--14 ресторан-->
+    <div class="block" data-cuisine="европейская">
+      <a href="rest_Bessonnica.html">
+        <img src="image/rest.bessonnica.jpg" width="130" height="140">
+        <p>Ресторан Бессонница</p>
+      </a>
+    </div>
+
+
+    <!--15 ресторан-->
+    <div class="block" data-cuisine="европейская">
+      <a href="rest_Cherdak.html">
+        <img src="image/rest.cherdak.jpg" width="130" height="140">
+        <p>Ресторан Чердак</p>
+      </a>
+    </div>
+
+
+    <!--16 ресторан-->
+    <div class="block" data-cuisine="мексиканская">
+      <a href="rest_UnoMas.html">
+        <img src="image/rest.unomas.jpg" width="130" height="140">
+        <p>Ресторан Uno Mas</p>
+      </a>
+    </div>
+    
+
+
+    <!--17 ресторан-->
+    <div class="block" data-cuisine="итальянская">
+      <a href="rest_NewsCafe.html">
+        <img src="image/rest.newscafe.jpg" width="130" height="140">
+        <p>Ресторан News Cafe</p>
+      </a>
+    </div>
+
+
+
+    <!--18 ресторан-->
+    <div class="block" data-cuisine="белорусская">
+      <a href="rest_Kuhmistr.html">
+        <img src="image/rest.kuhmistr.jpg" width="130" height="140">
+        <p>Ресторан Кухмистр</p>
+      </a>
+    </div>
+
+
+
+    <!--19 ресторан-->
+    <div class="block" data-cuisine="белорусская">
+      <a href="rest_Kamyanica.html">
+        <img src="image/rest.kamyanica.jpg" width="130" height="140">
+        <p>Ресторан Камяніца</p>
+      </a>
+    </div>
+
+
+
+    <!--20 ресторан-->
+    <div class="block" data-cuisine="американская">
+      <a href="rest_Nuahule.html">
+        <img src="image/rest.nuahule.jpg" width="130" height="140">
+        <p>Ресторан Nuahule</p>
+      </a>
+    </div>
+
+
+
+
+
+    <script>
+      function filterRestaurants() {
+  var selectedCuisine = document.getElementById('cuisineType').value.toLowerCase();
+
+  var restaurantCards = document.getElementsByClassName('block');
+  for (var i = 0; i < restaurantCards.length; i++) {
+    var cuisine = restaurantCards[i].getAttribute('data-cuisine').toLowerCase();
+
+    if (selectedCuisine === "" || cuisine === selectedCuisine) {
+      restaurantCards[i].style.display = 'block';
+    } else {
+      restaurantCards[i].style.display = 'none';
+    }
+  }
+}
+    </script>
+
+
+
+    <script>
+      function searchRestaurants() {
+        // Получаем значение из поля ввода
+        var searchQuery = document.getElementById('searchBox').value.toLowerCase();
+    
+        // Получаем все карточки ресторанов
+        var restaurantCards = document.getElementsByClassName('block');
+    
+        // Проходим по каждой карточке и скрываем/показываем в зависимости от наличия подстроки в имени
+        for (var i = 0; i < restaurantCards.length; i++) {
+          var restaurantName = restaurantCards[i].innerText.toLowerCase();
+    
+          // Если подстрока найдена, показываем элемент, в противном случае скрываем
+          if (restaurantName.includes(searchQuery)) {
+            restaurantCards[i].style.display = 'block';
+          } else {
+            restaurantCards[i].style.display = 'none';
+          }
+        }
+      }
+    </script>
+
+    <!-- Добавить дополнительные блоки по мере необходимости -->
+  </div>
+
+  <!-- Интерактивная карта -->
+  
+</div>
+
+
+
+
+</body>
+</html>

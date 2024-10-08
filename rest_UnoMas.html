@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Uno Mas</title>
+    <link rel="stylesheet" type="text/css" href="rest_UnoMas.css">
+</head>
+<body>
+
+
+    
+    <table>
+        <tr>
+            <td colspan="3"> 
+                    <div class = "nazv">  
+                        Ресторан Uno Mas
+                    </div>
+                    
+            </td>
+        </tr>
+
+
+        <tr>
+            <td colspan="3">
+                <div class = "photo"> 
+                <img src="image.UnoMas/1.jpg">
+                <img src="image.UnoMas/2.jpg">
+                <img src="image.UnoMas/3.jpg">
+                <img src="image.UnoMas/4.jpg">
+                <img src="image.UnoMas/5.jpg">  
+                </div>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="reviews">
+                    <p>
+                        <div style="width:460px;height:800px;overflow:hidden;position:relative;"><iframe style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" src="https://yandex.ru/maps-reviews-widget/80604757956?comments"></iframe><a href="https://yandex.by/maps/org/uno_mas/80604757956/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">Uno Mas на карте Минска — Яндекс Карты</a></div>
+                    </p>
+                </div>
+            </td>
+            <td class="detailed-info">
+                <div class = "hours-container">
+                    <a href="tel:+375299990939" class = "link-button" target="_blank">+375 29 999-09-39</a>
+                    <a href="https://yandex.by/maps/-/CDqBnV0i" class = "link-button" target="_blank">Минск, ул. Герцена, 12, корп. 1</a>
+                    <button class="hours-trigger" >Часы работы</button>
+
+                <!-- Скрытый блок с временем работы -->
+                <div class="hours-popup">
+
+                <ul>
+                <li>Понедельник: Выходной</li>
+                <li>Вторник: 18:00 - 02:00</li>
+                <li>Среда: 18:00 - 02:00</li>
+                <li>Четверг: 18:00 - 02:00</li>
+                <li>Пятница: 18:00 - 04:00</li>
+                <li>Суббота: 18:00 - 04:00</li>
+                <li>Воскресенье: 18:00 - 02:00</li>
+                <!-- Добавьте остальные дни -->
+                </ul>
+
+                </div>
+
+
+                </div>
+                
+
+                <p><strong>ОПИСАНИЕ: </strong>
+                    <dt>
+                        Мы - это маленький латиноамериканский бар в центре Минска. Это выражается в музыкальных ритмах, атмосфере и конечно же в наших коктейлях. Даже в самую холодную погоду вы сможете окунуться в тепло латиноамерикнского солнца в наших стенах. Большой выбор рома и текилы и коктейлей на их основе, кубинские и мексиканские закуски и живая музыка в пятницу и субботу заставляют наших гостей возвращаться к нам снова и снова
+                    </dt>
+                </p>
+                
+                <p> <strong>СРЕДНИЙ СЧЁТ: </strong><dt>30 - 50 бел.руб.</dt></p>
+                    
+                
+                    
+                <p> <strong>ТИП КУХНИ: </strong> 
+                    <dt> 
+                        Латиноамериканская, Мексиканская, Бар
+                    </dt>
+                 </p>
+
+                 <p><strong>ВРЕМЯ ПРИЕМА ПИЩИ: </strong> 
+                    <dt> 
+                        Открыто допоздна, Напитки
+                    </dt>
+                 </p>
+
+
+                 <p> <strong>УСЛУГИ: </strong>
+                    <dt> 
+                        Еда на вынос, Места для сидения, Подают алкоголь, Бар, Вино и пиво, Принимаются карты Mastercard, Принимаются карты Visa, Бесплатный Wi-Fi, Обслуживание посетителей за столиками, Бронирование
+                    </dt>
+                 </p>
+
+
+            </td>
+            <td>
+                <div id="map">
+                    
+                    <div style="position:relative;overflow:hidden;"><a href="https://yandex.by/maps/org/uno_mas/80604757956/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Uno Mas</a><a href="https://yandex.by/maps/157/minsk/category/bar_pub/184106384/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Бар, паб в Минске</a><iframe src="https://yandex.by/map-widget/v1/?indoorLevel=1&ll=27.558184%2C53.905700&mode=search&oid=80604757956&ol=biz&z=17.08" width="600" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+                
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+    <script>
+        // JavaScript для интерактивности кнопки
+        document.querySelector('.hours-trigger').addEventListener('click', function() {
+            var hoursPopup = document.querySelector('.hours-popup');
+            hoursPopup.style.display = hoursPopup.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>
